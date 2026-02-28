@@ -1,0 +1,224 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 980" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <filter id="softShadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#0B101C" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1060" height="980" rx="18" fill="#F2EBE0"/>
+
+  <!-- Title -->
+  <text x="530" y="48" text-anchor="middle" fill="#0B101C" font-size="22" font-weight="700" letter-spacing="1.5">COLOSSUS — SYSTEM ARCHITECTURE</text>
+
+  <!-- ═══════════════ ROW 1: dApp ═══════════════ -->
+  <rect x="40" y="72" width="980" height="120" rx="12" fill="#E8E2D6" stroke="#c5bfb3" stroke-width="1"/>
+
+  <text x="530" y="100" text-anchor="middle" fill="#375BD2" font-size="13" font-weight="700" letter-spacing="1">TAURI v2 + SVELTE 5 dAPP</text>
+
+  <!-- Tab boxes -->
+  <g filter="url(#softShadow)">
+    <rect x="72" y="112" width="140" height="56" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="142" y="135" text-anchor="middle" fill="#0B101C" font-size="12.5" font-weight="600">Weave</text>
+    <text x="142" y="152" text-anchor="middle" fill="#4b5c7a" font-size="9.5">create · splice</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="228" y="112" width="140" height="56" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="298" y="135" text-anchor="middle" fill="#0B101C" font-size="12.5" font-weight="600">Unweave</text>
+    <text x="298" y="152" text-anchor="middle" fill="#4b5c7a" font-size="9.5">redeem tokens</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="384" y="112" width="140" height="56" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="454" y="135" text-anchor="middle" fill="#0B101C" font-size="12.5" font-weight="600">Bridge</text>
+    <text x="454" y="152" text-anchor="middle" fill="#4b5c7a" font-size="9.5">CCIP transfer</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="540" y="112" width="140" height="56" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="610" y="135" text-anchor="middle" fill="#0B101C" font-size="12.5" font-weight="600">Portfolio</text>
+    <text x="610" y="152" text-anchor="middle" fill="#4b5c7a" font-size="9.5">NAV · Analyze</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="696" y="112" width="160" height="56" rx="8" fill="#FAF8FF" stroke="#C4B0F0" stroke-width="1.2"/>
+    <text x="776" y="135" text-anchor="middle" fill="#4A21C2" font-size="12.5" font-weight="700">CCC Card</text>
+    <text x="776" y="152" text-anchor="middle" fill="#4b5c7a" font-size="9.5">private holdings</text>
+  </g>
+
+  <text x="960" y="178" text-anchor="end" fill="#4b5c7a" font-size="9.5" font-style="italic">chainId →</text>
+
+  <!-- Arrow: dApp → Bridge -->
+  <line x1="530" y1="192" x2="530" y2="228" stroke="#375BD2" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="525,226 530,235 535,226" fill="#375BD2" opacity="0.5"/>
+
+  <!-- ═══════════════ ROW 2: CRE BRIDGE ═══════════════ -->
+  <rect x="40" y="238" width="980" height="130" rx="12" fill="#E8E2D6" stroke="#c5bfb3" stroke-width="1"/>
+
+  <text x="530" y="266" text-anchor="middle" fill="#375BD2" font-size="13" font-weight="700" letter-spacing="1">CRE BRIDGE SERVER (BUN)</text>
+
+  <!-- Standard endpoints -->
+  <g font-size="10" text-anchor="middle">
+    <text x="150" y="292" fill="#4b5c7a" font-size="9" font-weight="600">POST</text>
+    <text x="150" y="310" fill="#0B101C" font-size="12.5" font-weight="600">/verify</text>
+
+    <text x="320" y="292" fill="#4b5c7a" font-size="9" font-weight="600">POST</text>
+    <text x="320" y="310" fill="#0B101C" font-size="12.5" font-weight="600">/nav</text>
+
+    <text x="480" y="292" fill="#4b5c7a" font-size="9" font-weight="600">POST</text>
+    <text x="480" y="310" fill="#0B101C" font-size="12.5" font-weight="600">/analyze</text>
+  </g>
+
+  <!-- Separator -->
+  <line x1="580" y1="282" x2="580" y2="325" stroke="#c5bfb3" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- CCC endpoints (purple) -->
+  <g font-size="10" text-anchor="middle">
+    <text x="680" y="292" fill="#4A21C2" font-size="9" font-weight="600">POST</text>
+    <text x="680" y="310" fill="#4A21C2" font-size="12.5" font-weight="600">/ccc-balances</text>
+
+    <text x="840" y="292" fill="#4A21C2" font-size="9" font-weight="600">POST</text>
+    <text x="840" y="310" fill="#4A21C2" font-size="12.5" font-weight="600">/nav-ccc</text>
+
+    <text x="970" y="292" fill="#4A21C2" font-size="9" font-weight="600">POST</text>
+    <text x="970" y="310" fill="#4A21C2" font-size="12.5" font-weight="600">/analyze-ccc</text>
+  </g>
+
+  <!-- Labels -->
+  <text x="320" y="348" text-anchor="middle" fill="#4b5c7a" font-size="9" font-style="italic">standard HTTP</text>
+  <text x="830" y="348" text-anchor="middle" fill="#7C5CBF" font-size="9" font-style="italic">confidential compute</text>
+
+  <!-- Arrows: Bridge → Workflows -->
+  <line x1="320" y1="368" x2="320" y2="404" stroke="#375BD2" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="315,402 320,411 325,402" fill="#375BD2" opacity="0.5"/>
+
+  <line x1="830" y1="368" x2="830" y2="404" stroke="#4A21C2" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="825,402 830,411 835,402" fill="#4A21C2" opacity="0.5"/>
+
+  <!-- ═══════════════ ROW 3: CRE WORKFLOWS ═══════════════ -->
+  <rect x="40" y="414" width="980" height="140" rx="12" fill="#E8E2D6" stroke="#c5bfb3" stroke-width="1"/>
+
+  <text x="530" y="442" text-anchor="middle" fill="#375BD2" font-size="13" font-weight="700" letter-spacing="1">CHAINLINK CRE WORKFLOWS</text>
+
+  <!-- Standard workflows -->
+  <g filter="url(#softShadow)">
+    <rect x="55" y="456" width="160" height="76" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="135" y="478" text-anchor="middle" fill="#0B101C" font-size="11" font-weight="600">colossus-verify</text>
+    <text x="135" y="494" text-anchor="middle" fill="#4b5c7a" font-size="9.5">fund verification</text>
+    <text x="135" y="520" text-anchor="middle" fill="#8899b0" font-size="8.5">HTTP · chain-aware</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="228" y="456" width="150" height="76" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="303" y="478" text-anchor="middle" fill="#0B101C" font-size="11" font-weight="600">basket-nav</text>
+    <text x="303" y="494" text-anchor="middle" fill="#4b5c7a" font-size="9.5">per-unit NAV pricing</text>
+    <text x="303" y="520" text-anchor="middle" fill="#8899b0" font-size="8.5">HTTP · chain-aware</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="391" y="456" width="150" height="76" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="466" y="478" text-anchor="middle" fill="#0B101C" font-size="11" font-weight="600">basket-analysis</text>
+    <text x="466" y="494" text-anchor="middle" fill="#4b5c7a" font-size="9.5">4-source AI analysis</text>
+    <text x="466" y="520" text-anchor="middle" fill="#8899b0" font-size="8.5">HTTP · chain-aware</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="554" y="456" width="160" height="76" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="634" y="478" text-anchor="middle" fill="#0B101C" font-size="11" font-weight="600">basket-compliance</text>
+    <text x="634" y="494" text-anchor="middle" fill="#4b5c7a" font-size="9.5">on-DON policy check</text>
+    <text x="634" y="520" text-anchor="middle" fill="#8899b0" font-size="8.5">cron · Sepolia</text>
+  </g>
+
+  <!-- CCC workflows (purple border) -->
+  <g filter="url(#softShadow)">
+    <rect x="730" y="456" width="135" height="76" rx="8" fill="#FAF8FF" stroke="#C4B0F0" stroke-width="1.2"/>
+    <text x="797" y="478" text-anchor="middle" fill="#4A21C2" font-size="10.5" font-weight="600">ccc-basket-nav</text>
+    <text x="797" y="494" text-anchor="middle" fill="#4b5c7a" font-size="9">confidential NAV</text>
+    <text x="797" y="520" text-anchor="middle" fill="#8899b0" font-size="8.5">ConfHTTPClient</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="878" y="456" width="135" height="76" rx="8" fill="#FAF8FF" stroke="#C4B0F0" stroke-width="1.2"/>
+    <text x="945" y="475" text-anchor="middle" fill="#4A21C2" font-size="10.5" font-weight="600">ccc-basket-</text>
+    <text x="945" y="490" text-anchor="middle" fill="#4A21C2" font-size="10.5" font-weight="600">analysis</text>
+    <text x="945" y="506" text-anchor="middle" fill="#4b5c7a" font-size="9">confidential AI</text>
+    <text x="945" y="522" text-anchor="middle" fill="#8899b0" font-size="8.5">ConfHTTPClient</text>
+  </g>
+
+  <!-- Arrows: Workflows → Data Sources -->
+  <line x1="250" y1="554" x2="250" y2="590" stroke="#375BD2" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="245,588 250,597 255,588" fill="#375BD2" opacity="0.5"/>
+  <line x1="530" y1="554" x2="530" y2="590" stroke="#375BD2" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="525,588 530,597 535,588" fill="#375BD2" opacity="0.5"/>
+  <line x1="810" y1="554" x2="810" y2="590" stroke="#375BD2" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="805,588 810,597 815,588" fill="#375BD2" opacity="0.5"/>
+
+  <!-- ═══════════════ ROW 4: DATA SOURCES ═══════════════ -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="600" width="280" height="65" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="200" y="624" text-anchor="middle" fill="#375BD2" font-size="12" font-weight="600">Blockchain · EVM Reads</text>
+    <text x="200" y="641" text-anchor="middle" fill="#4b5c7a" font-size="9.5">balanceOf · getBasket · getPolicies</text>
+    <text x="200" y="655" text-anchor="middle" fill="#8899b0" font-size="8.5">Sepolia + Base Sepolia</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="362" y="600" width="280" height="65" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="502" y="624" text-anchor="middle" fill="#375BD2" font-size="12" font-weight="600">Chainlink Price Feeds</text>
+    <text x="502" y="641" text-anchor="middle" fill="#4b5c7a" font-size="9.5">LINK/USD · ETH/USD</text>
+    <text x="502" y="655" text-anchor="middle" fill="#8899b0" font-size="8.5">both chains</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="664" y="600" width="310" height="65" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="819" y="624" text-anchor="middle" fill="#375BD2" font-size="12" font-weight="600">External APIs</text>
+    <text x="819" y="641" text-anchor="middle" fill="#4b5c7a" font-size="9.5">Space and Time · CoinGecko · Claude AI</text>
+    <text x="819" y="655" text-anchor="middle" fill="#8899b0" font-size="8.5">standard + confidential HTTP</text>
+  </g>
+
+  <!-- Arrow: Data → Contracts -->
+  <line x1="530" y1="665" x2="530" y2="706" stroke="#375BD2" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="525,704 530,713 535,704" fill="#375BD2" opacity="0.5"/>
+
+  <!-- ═══════════════ ROW 5: SMART CONTRACTS ═══════════════ -->
+  <rect x="40" y="716" width="980" height="240" rx="12" fill="#E8E2D6" stroke="#c5bfb3" stroke-width="1"/>
+
+  <text x="530" y="744" text-anchor="middle" fill="#375BD2" font-size="13" font-weight="700" letter-spacing="1">SMART CONTRACTS (V4)</text>
+
+  <!-- Row 1 of contracts -->
+  <g filter="url(#softShadow)">
+    <rect x="72" y="758" width="240" height="76" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="192" y="782" text-anchor="middle" fill="#0B101C" font-size="13" font-weight="700">BasketFactory</text>
+    <text x="192" y="799" text-anchor="middle" fill="#375BD2" font-size="10">PolicyProtected</text>
+    <text x="192" y="822" text-anchor="middle" fill="#4b5c7a" font-size="9.5">weave · createBasket · unweave</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="332" y="758" width="200" height="76" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="432" y="782" text-anchor="middle" fill="#0B101C" font-size="13" font-weight="700">Escrow</text>
+    <text x="432" y="799" text-anchor="middle" fill="#375BD2" font-size="10">multi-standard custody</text>
+    <text x="432" y="822" text-anchor="middle" fill="#4b5c7a" font-size="9.5">ERC-20 · 721 · 1155</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="552" y="758" width="240" height="76" rx="8" fill="#fff" stroke="#0847F7" stroke-width="1.2"/>
+    <text x="672" y="782" text-anchor="middle" fill="#0B101C" font-size="13" font-weight="700">CCIPBasketBridge</text>
+    <text x="672" y="799" text-anchor="middle" fill="#0847F7" font-size="10">Sepolia ↔ Base Sepolia</text>
+    <text x="672" y="822" text-anchor="middle" fill="#4b5c7a" font-size="9.5">sendBasket · unweaveRemote</text>
+  </g>
+
+  <!-- Row 2 of contracts -->
+  <g filter="url(#softShadow)">
+    <rect x="72" y="852" width="240" height="76" rx="8" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="192" y="876" text-anchor="middle" fill="#0B101C" font-size="13" font-weight="700">PolicyEngine</text>
+    <text x="192" y="893" text-anchor="middle" fill="#375BD2" font-size="10">ACE compliance (proxy)</text>
+    <text x="192" y="916" text-anchor="middle" fill="#4b5c7a" font-size="9.5">CallerAllowPolicy</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="332" y="852" width="200" height="76" rx="8" fill="#FAF8FF" stroke="#C4B0F0" stroke-width="1.2"/>
+    <text x="432" y="876" text-anchor="middle" fill="#4A21C2" font-size="13" font-weight="700">CCC Vault</text>
+    <text x="432" y="893" text-anchor="middle" fill="#4A21C2" font-size="10">private token balances</text>
+    <text x="432" y="916" text-anchor="middle" fill="#4b5c7a" font-size="9.5">EIP-712 auth · Sepolia</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(620, 862)">
+    <rect x="0" y="0" width="12" height="12" rx="2" fill="#fff" stroke="#ccd7f5" stroke-width="1.2"/>
+    <text x="20" y="11" fill="#4b5c7a" font-size="9.5">Core / Price Feeds / ACE</text>
+
+    <rect x="0" y="22" width="12" height="12" rx="2" fill="#fff" stroke="#0847F7" stroke-width="1.2"/>
+    <text x="20" y="33" fill="#4b5c7a" font-size="9.5">CCIP Bridge</text>
+
+    <rect x="0" y="44" width="12" height="12" rx="2" fill="#FAF8FF" stroke="#C4B0F0" stroke-width="1.2"/>
+    <text x="20" y="55" fill="#4b5c7a" font-size="9.5">CCC Privacy</text>
+  </g>
+
+</svg>

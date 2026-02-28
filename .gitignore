@@ -1,0 +1,53 @@
+# ===== SECRETS — NEVER PUSH =====
+.env
+*.env
+contracts/.env
+workflows/cre/.env
+workflows/cre/secrets.yaml
+secrets.yaml
+demo-env.sh
+verify-contracts*.sh
+colossus-handoff*.md
+
+# ===== Build artifacts =====
+**/node_modules/
+node_modules/
+dist/
+out/
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+*.local
+
+# ===== Foundry =====
+# lib/ is managed by .gitmodules — submodules are committed via reference, not content
+# If lib/ dirs are showing as untracked, run: git submodule update --init --recursive
+
+# ===== Tauri =====
+src-tauri/target/
+
+# ===== Editor / OS =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===== Bun / npm =====
+bun.lockb
+*.tsbuildinfo
+
+# ===== Vite =====
+vite/
+
+# ===== Misc =====
+*.log
+*.local
+**/node_modules/
+contracts/broadcast/
+
+# Safety push additions
+demo-script.md
+safety-push.sh

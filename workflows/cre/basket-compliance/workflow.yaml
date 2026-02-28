@@ -1,0 +1,23 @@
+# ==========================================================================
+# CRE WORKFLOW SETTINGS FILE — basket-compliance
+# ==========================================================================
+# Checks ACE PolicyEngine compliance for a user + basket combination.
+# Reads PolicyEngine state on-chain: attached policies, allowlist status.
+
+# ==========================================================================
+staging-settings:
+  user-workflow:
+    workflow-name: "basket-compliance-staging"
+  workflow-artifacts:
+    workflow-path: "./main.ts"
+    config-path: "./config.staging.json"
+    secrets-path: ""
+
+# ==========================================================================
+production-settings:
+  user-workflow:
+    workflow-name: "basket-compliance-production"
+  workflow-artifacts:
+    workflow-path: "./main.ts"
+    config-path: "./config.production.json"
+    secrets-path: ""

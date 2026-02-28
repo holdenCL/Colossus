@@ -1,0 +1,11 @@
+{
+  "name": "basket-analysis",
+  "version": "1.0.0",
+  "description": "CRE workflow: AI-powered basket portfolio analysis for Colossus (SXT + Claude)",
+  "main": "main.ts",
+  "dependencies": {
+    "@chainlink/cre-sdk": "^1.0.7",
+    "viem": "^2.30.0",
+    "zod": "^3.24.0"
+  }
+}

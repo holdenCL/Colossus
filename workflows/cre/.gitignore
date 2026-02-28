@@ -1,0 +1,7 @@
+*.env
+project.yaml
+secrets.yaml
+node_modules/
+*.wasm
+.cre_build_tmp.js
+bun.lock

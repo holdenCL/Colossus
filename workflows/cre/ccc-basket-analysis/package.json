@@ -1,0 +1,11 @@
+{
+  "name": "ccc-basket-analysis",
+  "version": "1.0.0",
+  "description": "CRE workflow: Privacy-preserving basket analysis via ConfidentialHTTPClient (SXT + CoinGecko + Claude in secure enclave)",
+  "main": "main.ts",
+  "dependencies": {
+    "@chainlink/cre-sdk": "^1.0.7",
+    "viem": "^2.30.0",
+    "zod": "^3.24.0"
+  }
+}

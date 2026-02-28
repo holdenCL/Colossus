@@ -1,0 +1,22 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "enables the default permissions",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    "shell:allow-open"
+  ],
+  "remote": {
+    "urls": [
+      "https://relay.walletconnect.org",
+      "wss://relay.walletconnect.org",
+      "https://*.walletconnect.org",
+      "wss://*.walletconnect.org",
+      "https://*.walletconnect.com",
+      "wss://*.walletconnect.com"
+    ]
+  }
+}
