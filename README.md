@@ -176,7 +176,6 @@ Colossus/
 ├── docs/                         # Project documentation
 │   ├── pitch-deck.md             # Vision, integration details, scaling
 │   ├── competitive-analysis.md   # Landscape vs. competitors
-│   ├── demo-script.md            # 10-beat demo recording script
 │   ├── architecture.svg          # System architecture diagram
 │   └── How-Basket-Value-Works.md # 1:1 backing, NAV, no-dilution explainer
 │
