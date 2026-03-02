@@ -2363,6 +2363,9 @@
     border: 1px solid rgba(55, 91, 210, 0.4);
     background: rgba(55, 91, 210, 0.08);
   }
+  .ccc-cre-analysis .cre-analysis-text {
+    color: #e2e8f0;
+  }
   .ccc-cre-error-box {
     border: 1px solid rgba(187, 73, 60, 0.4);
     background: rgba(187, 73, 60, 0.08);
